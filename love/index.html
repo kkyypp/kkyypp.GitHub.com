@@ -1,0 +1,108 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+<script type="text/javascript" id="headerjs-15027123_17127" sogou-script="true" src="https://BCC0E825-2420-4190-AF25-ABD45D41EA3A/sb/extheadercontentscript/?sbid=headerjs-15027123_17127&isTopFrame=true&url=http%3a%2f%2flove.hackerzhou.me%2f" charset="UTF-8"></script>
+<link rel="stylesheet" id="headercss-15027123_17127" type="text/css" href="https://BCC0E825-2420-4190-AF25-ABD45D41EA3A/sb/extcontentcss/?sbid=headercss-15027123_17127&isTopFrame=true&url=http%3a%2f%2flove.hackerzhou.me%2f" charset="UTF-8"></link>
+<script type="text/javascript" id="headercssdeljs-15027123_17127">var jsCSSNode = document.getElementById("headercss-15027123_17127");if (jsCSSNode){jsCSSNode.parentNode.removeChild(jsCSSNode);}var jsSelfNode = document.getElementById("headercssdeljs-15027123_17127");if (jsSelfNode){jsSelfNode.parentNode.removeChild(jsSelfNode);}</script>
+<script type="text/javascript" id="sbid-secureinput" sogou-script="true" src="https://BCC0E825-2420-4190-AF25-ABD45D41EA3A/sb/secureinput/" charset="UTF-8"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* 妞，时间过得真快；</span><br />
+				<span class="space"/><span class="comments">* 不知不觉，我们已经牵手100天了；</span><br />
+				<span class="space"/><span class="comments">*/----------------------------</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Liang"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Yun"</span>);<br />
+				<span class="space"/><span class="comments">*/----------------------------</span><br />
+				<span class="comments">// 我们牵手在2014-2-6美丽的旁晚； </span><br />
+				i.love(u);<br />
+				<span class="comments">// 牵手后的100天里；</span><br />
+				u.accepted();<br />
+				<span class="comments">// 发生的事情也不少；</span><br />
+				i.miss(u);<br />
+				<span class="comments">// 我们开心过，也曾不开心过；</span><br />
+				i.takeCareOf(u);<br />
+				<span class="comments">// 但是，我们并没有放弃；</span><br />
+				<span class="comments">// 我想，就凭这点，我们的爱情会更精彩。</span><br />
+				<span class="comments">// 此页面诞生于牵手100天诞生，并见证着我们的爱情！2014-5-16 23:00</span><br />
+				i.marry(u);<br />
+				i.liveHappilyWith(u);<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Yun, I have fallen in love with you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- Liang</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  <div id="copyright">
+			Inspired by <a href="http://user.qzone.qq.com/1010601794/">眞实詤言</a> project.<br />
+		  Copyright © 2014 <a href='http://www.44333344.cn'>QQ空间音乐外链网</a> 2014-20XX		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var displayMode = 1;
+		var together = new Date();
+		together.setFullYear(2014, 1, 5);//需要算上牵手当天！
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		$("#loveHeart").click(function(){
+			displayMode *= -1;
+			timeElapse(together, displayMode);
+		});
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together, displayMode);
+			setInterval(function () {
+				timeElapse(together, displayMode);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+<script type="text/javascript" src="parts.js"></script><p style="text-align:center;margin:0px;"></p>
+<embed src="Beautiful Lady.mp3" hidden="true" autostart="true" loop="true">
+</html>
